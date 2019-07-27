@@ -1,0 +1,8 @@
+.tscache
+.baseDir.ts
+.idea
+dist
+build
+node_modules
+.DS_Store
+**/__snapshots__
