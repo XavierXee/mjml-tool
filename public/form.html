@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form MJML</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Newsletter Template Generator</h3>
+      <div class="col s4 left-align">
+        <form class="" action="generate.php" method="post">
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="section">
+                <label for="date">Campaign's date
+                  <input type="date" name="date" value="">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="section">
+                <h4>Hero Header</h4>
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Hero Image</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+                <label for="backgroundHeight">Background Height PX
+                  <input type="number" name="backgroundHeight" value="">
+                </label>
+              </div>
+              <div class="section">
+                <label for="cta1">Text CTA Hero
+                  <input type="text" name="cta1" value="">
+                </label>
+                <label for="url1">Relative URL Hero Header
+                  <input type="text" name="url1" value="" placeholder="/stream/documentaries/nation-and-regions/item/3062">
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="section">
+                <h4>Email body</h4>
+                Type of Template
+                <br>
+                <p>
+                  <label>
+                    <input type="radio" name="radio" value="triptic" class="with-gap"><span>Tri-part</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="radio" value="lastadded" class="with-gap"> <span>Latest Added (dark theme)</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="radio" value="one" class="with-gap"> <span>Only One</span>
+                  </label>
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="section">
+                <h4>body image</h4>
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>body Image</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+                <label for="bodyHeight">body image PX
+                  <input type="number" name="bodyHeight" value="">
+                </label>
+              </div>
+              <div class="section">
+                <label for="cta2">Text CTA body
+                  <input type="text" name="cta2" value="">
+                </label>
+                <label for="url2">Relative URL body item
+                  <input type="text" name="url2" value="" placeholder="/stream/documentaries/nation-and-regions/item/3062">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="section">
+                <h3>Brands</h3>
+                <h4>baseplay</h4>
+                <p>
+                  <label>
+                    <input type="checkbox" name="mvpBaseplay" value="mvp" checked/>
+                    <span>MVP (without social) </span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="genericBrosia" value="generic" disabled/>
+                    <span>Generic </span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="namedBrosia" value="named" disabled/>
+                    <span>Named</span>
+                  </label>
+                </p>
+                <label for="baseplayPreview">Preview baseplay.</label>
+                <input type="text" name="baseplay" value="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="section">
+                <h4>brosia</h4>
+                <p>
+                  <label>
+                    <input type="checkbox" name="genericBrosia" value="generic" checked/>
+                    <span>Generic </span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="namedBrosia" value="named" checked/>
+                    <span>Named</span>
+                  </label>
+                </p>
+                <label for="brosiaPreview">Preview Brosia</label>
+                <input type="text" name="brosia" value="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="section">
+                <h4>hipstia</h4>
+                <p>
+                  <label>
+                    <input type="checkbox" name="genericHipstia" checked/>
+                    <span>Generic </span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="namedHipstia" checked/>
+                    <span> Named</span>
+                  </label>
+                </p>
+                <label for="hipstia">Preview Hipstia</label>
+                <input type="text" name="hipstia" value="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="section">
+                <h4>toptap</h4>
+                <p>
+                  <label>
+                    <input type="checkbox" name="genericToptap" checked/>
+                    <span>Generic</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="namedToptap" checked/>
+                    <span>Named</span>
+                  </label>
+                </p>
+                <label for="toptapPreview">Preview TopTap</label>
+                <input type="text" name="toptap" value="">
+              </div>
+            </div>
+          </div>
+          <input type="submit" name="submit" value="submit" class="waves-effect waves-light btn">
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+  </body>
+
+</html>
