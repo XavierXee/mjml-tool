@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, ButtonToolbar } from 'react-bootstrap';
 import { RadarGrid } from '../RadarGrid/RadarGrid';
+import Form from '../Form/Form';
 import { Error } from '../Error/Error';
 
 import './Main.css';
@@ -71,24 +72,8 @@ export class Main extends React.Component {
 
         return(
             <div className='main'>
-                <h1>Space Invaders Detector</h1>
-                <ButtonToolbar>
-                    <Button
-                        onClick={this.getRadar}
-                        className='main--button'
-                        variant="light"
-                        type='submit'>
-                        Get Radar
-                    </Button>
-                    <Button
-                        onClick={this.detect}
-                        className='main--button'
-                        variant="light"
-                        type='submit'>
-                        Detect
-                    </Button>
-                </ButtonToolbar>
-                <RadarGrid data={data} report={report}/>
+                <h1>Editor</h1>
+                <Form />
             </div>
         );
     }

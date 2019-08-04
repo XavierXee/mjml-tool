@@ -1,0 +1,26 @@
+.EmailBody-checkbox-element {
+    display: inline-block;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.EmailBody-checkbox-element__first {
+    margin: 10px 10px 10px 0px;
+}
+
+.EmailBody-checkbox-element-img {
+    cursor: pointer;
+    display: block;
+}
+
+.EmailBody-checkbox-element-label {
+    cursor: pointer;
+    position: relative;
+}
+
+.EmailBody-checkbox-element-input {
+    cursor: pointer;
+    opacity: 1 !important;
+    top: 30px;
+    left: calc(50% - 4px);
+}
