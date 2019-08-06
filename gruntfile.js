@@ -29,9 +29,14 @@ module.exports = function(grunt) {
                 options: {
                     module: "commonjs",
                     target: "es6",
-                    lib: ["esnext"],
+                    lib: [
+                        "dom",
+                        "dom.iterable",
+                        "esnext"
+                    ],
                     sourceMap: false,
-                    rootDir: "app"
+                    rootDir: "app",
+                    typeRoots: ["node_modules/@types"]
                 }
             }
         },

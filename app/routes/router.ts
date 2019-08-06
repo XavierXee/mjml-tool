@@ -5,7 +5,7 @@ export class BaseRoute {
   protected title: string;
 
   constructor() {
-    this.title = "Space Invaders Detector";
+    this.title = "Mjml Tool";
   }
 
   public render(req: Request, res: Response, view: string): void {

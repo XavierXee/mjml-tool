@@ -2,13 +2,15 @@ import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
 import * as express from 'express';
 import * as path from 'path';
+// @ts-ignore
 import errorHandler = require('errorhandler');
+// @ts-ignore
 import methodOverride = require('method-override');
 
 import { Main } from './core/main';
 
 import { IndexRoute } from './routes/static/index';
-import { ApiRadar } from './routes/api/api-radar';
+import { ApiData } from './routes/api/api-data';
 
 require('dotenv').config();
 
@@ -59,7 +61,7 @@ export class App {
     let router: express.Router;
     router = express.Router();
     IndexRoute.create(router);
-    ApiRadar.create(router, this.main);
+    ApiData.create(router, this.main);
 
     this.app.use(router);
   }

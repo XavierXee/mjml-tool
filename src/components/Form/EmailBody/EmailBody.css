@@ -4,6 +4,7 @@
     text-align: center;
 }
 
+/* TODO: fix template type checkbox responsiveness */
 .EmailBody-checkbox-element__first {
     margin: 10px 10px 10px 0px;
 }

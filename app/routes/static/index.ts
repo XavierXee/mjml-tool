@@ -14,7 +14,7 @@ export class IndexRoute extends BaseRoute {
     }
 
     public index(req: Request, res: Response): void {
-        this.title = "Space Invaders Detector";
+        this.title = "MJML Tool";
         this.render(req, res, "index");
     }
 
